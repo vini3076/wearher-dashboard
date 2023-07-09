@@ -1,1 +1,1 @@
-# wearher-dashboard
+# weather-dashboard
