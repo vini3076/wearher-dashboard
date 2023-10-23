@@ -119,7 +119,7 @@ function addButtons() {
 }
 
 function saveSearch(cityName) {
-  // Get the previous cities from local storage
+  // Get existing cities from local storage
   let previousCities =
     JSON.parse(localStorage.getItem("previous-cities")) || [];
 
@@ -134,7 +134,7 @@ function saveSearch(cityName) {
   // Save the updated cities back to local storage
   localStorage.setItem("previous-cities", JSON.stringify(previousCities));
 
-  // Create the buttons
+  // Add the buttons for the cities
   addButtons();
 }
 
